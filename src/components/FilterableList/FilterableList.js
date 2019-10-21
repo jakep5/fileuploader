@@ -1,7 +1,8 @@
 import './FilterableList.css';
 import ListItem from '../ListItem/ListItem'
+import React from 'react';
 
-class FilterableList extends Component {
+class FilterableList extends React.Component {
     render() {
         const list = this.props.files.map((file,key) => <ListItem {...file} key={key} />);
         return (
