@@ -32,3 +32,5 @@ class FilterOptions extends React.Component {
         )
     }
 }
+
+export default FilterOptions;
