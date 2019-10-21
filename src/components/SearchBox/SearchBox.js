@@ -9,7 +9,11 @@ class SearchBox extends React.Component {
         return (
             <div className = "SearchBox">
                 <FontAwesomeIcon icon = {faSearch} />
-                <input placeholder="Search term"></input>
+                <input 
+                    placeholder="Search term" 
+                    value={this.props.searchTerm}
+                    onChange={e => this.props.updateSearchTerm(e.target.value)}>
+                    </input>
             </div>
         )
     }
